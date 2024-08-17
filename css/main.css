@@ -83,13 +83,195 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/* ======== Author's custom styles ======== */
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+
+/* --- Base Styles ---*/
+
+body {
+}
+
+.content-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* --- Header Styles --- */
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .content-wrapper {
+  flex-flow: column wrap;
+}
+
+header a {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 70%;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* --- Main Content Styles --- */ 
+
+/* Hero Area */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+
+.hero-area .content-wrapper {
+  align-items: flex-start;
+}
+
+/* Aside */
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+aside .content-wrapper {
+  flex-flow: column wrap;
+}
+
+.form-description {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.form {
+}
+
+/* Features */
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.features .content-wrapper {
+  flex-flow: column wrap;
+}
+
+.features h2 {
+  align-self: flex-start;
+}
+
+.features-items {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.features-items article {
+  display: flex;
+  justify-content: center;
+}
+
+/* Reviews */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews .content-wrapper {
+  flex-flow: column wrap;
+}
+
+.reviews h2 {
+  align-self: flex-start;
+}
+
+.review-item {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column wrap;
+}
+
+.review-item img {
+  width: 90%;
+  align-self: center;
+}
+
+.review-text {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+}
+
+
+/* --- Footer Styles ---*/
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* === About Page Styles === */
+
+/* Mission */
+
+.mission {
+  display: flex;
+  justify-content: center;
+}
+
+/* Map */
+
+
+/* Contact */
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section .content-wrapper {
+  flex-flow: column wrap;
+}
+
+.contact-content {
+  align-self: flex-start;
+}
+
+/* === FAQ Page Styles === */
+
+.faq {
+  display: flex;
+  justify-content: center;
+}
+
+.faq .content-wrapper {
+  flex-flow: column wrap;
+}
+
+/* ======== Helper classes ======== */
 
 /*
  * Hide visually and from screen readers
