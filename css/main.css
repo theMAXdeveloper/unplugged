@@ -459,11 +459,13 @@ footer p {
 /* === Tablet Styles === */
 @media only screen and (min-width: 768px) {
 
-  /* Header */
+  /* Base Styles */
 
   .content-wrapper {
     width: 640px;
   }
+
+   /* Header */
 
   header {
     padding: 33px 0;
@@ -476,6 +478,7 @@ footer p {
 
   .logo {
     width: 35%;
+    justify-content: flex-start;
   }
 
   .header-divider {
@@ -507,6 +510,7 @@ footer p {
   aside .content-wrapper {
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .form-description {
@@ -550,6 +554,7 @@ footer p {
 
   .review-item {
     flex-flow: row nowrap;
+    justify-content: space-between;
   }
 
   .review-item img {
@@ -563,7 +568,7 @@ footer p {
   /* Footer */
 
   footer .content-wrapper {
-    width: 90%;
+    width: 640px;
     margin: 100px 0; 
   }
 
@@ -645,6 +650,72 @@ footer p {
 /* === Desktop Styles === */
 @media only screen and (min-width: 1200px) {
 
+  /* Base Styles */
+
+  .content-wrapper {
+    width: 960px;
+  }
+
+  /* Header */
+
+  header {
+    padding: 15px 0;
+  }
+
+  /* Hero area */
+
+  .hero-area {
+    height: 400px;
+  }
+
+  /* Aside */
+
+  .form {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  /* Features */
+
+  .features-items article {
+    width: 30%;
+  }
+
+  /* Reviews */
+
+  .reviews h2 {
+    margin: 0 0 50px;
+  }
+
+  /* Footer */
+
+  footer .content-wrapper {
+    width: 960px;
+  }
+
+  .footer-content {
+    justify-content: space-between;
+  }
+
+  .contact {
+    width: 20%;
+  }
+
+
+  /* === About Page === */
+
+  /* Mission */
+
+  /* Map */
+
+  .map {
+    height: 450px;
+  }
+
+  /* Contact Section */
+
+  /* === FAQ Page === */
+  
 }
 
 
