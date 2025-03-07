@@ -420,6 +420,8 @@ footer address {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+  padding: 50px 0;
 }
 
 /* Map */
@@ -431,10 +433,16 @@ footer address {
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
+  padding: 50px 0;
 }
 
 .contact-section .content-wrapper {
   flex-flow: column wrap;
+}
+
+.contact-section h2 {
+  margin: 0;
 }
 
 .contact-content {
@@ -450,7 +458,8 @@ footer address {
 .faq {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
