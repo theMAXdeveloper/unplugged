@@ -89,7 +89,14 @@ textarea {
 /* --- Base Styles ---*/
 
 html {
+  box-sizing: border-box;
   font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -152,6 +159,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -206,6 +214,8 @@ header nav ul li {
   justify-content: center;
   height: 500px;
   padding: 50px 0;
+  background: #ffffff url("../img/unplugged-retreat.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .hero-area .content-wrapper {
@@ -217,6 +227,7 @@ h1 {
   line-height: 43px;
   font-weight: 500;
   font-family: 'poppins', sans-serif;
+  color: #e2e3ed;
 }
 
 /* Aside */
@@ -225,39 +236,56 @@ aside {
   display: flex;
   justify-content: center;
   padding: 50px 0;
+  background-color: #527158;
 }
 
 aside .content-wrapper {
   flex-flow: column wrap;
 }
 
-aside h3 {
-  margin: 20px 0;
-}
-
-.form-description {
+aside .form-description {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
 }
 
-.form-description p {
+aside .form {
+  
+}
+
+aside h3 {
+  color: #e2e3ed;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+aside p {
+  color: #e2e3ed;
+  font-size: 1em;
   margin: 0 0 30px;
 }
 
-.form {
-  width: 90%;
-}
-
 input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  font-style: italic;
   padding: 1em;
   margin-bottom: 20px;
   color: #2a423a;
 }
 
 input[type="button"] {
+  width: 100%;
   padding: 20px 0;
   margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 
 }
 
@@ -267,6 +295,7 @@ input[type="button"] {
   display: flex;
   justify-content: center;
   padding: 50px 0;
+  background: #527158 url("../img/unplugged-retreat-features.jpg") no-repeat center;
 }
 
 .features .content-wrapper {
@@ -276,6 +305,7 @@ input[type="button"] {
 .features h2 {
   align-self: flex-start;
   margin: 0 0 60px;
+  color: #e2e3ed;
 }
 
 .features-items {
@@ -289,11 +319,13 @@ input[type="button"] {
   justify-content: center;
   align-self: center;
   width: 60%;
-  margin: 30px 0;
+  margin: 0 0 30px;
+  color: #e2e3ed;
+  text-align: center;
 }
 
 .fontawesome-icon {
-  padding: 0 0 40px;
+  padding: 30px 0 40px;
   font-size: 3.75em;
 }
 
@@ -302,7 +334,8 @@ input[type="button"] {
 .reviews {
   display: flex;
   justify-content: center;
-  margin: 50px 0;
+  padding: 50px 0;
+  background-color: #2a423a;
 }
 
 .reviews .content-wrapper {
@@ -313,12 +346,14 @@ input[type="button"] {
   align-self: flex-start;
   margin: 0 0 40px;
   line-height: 30px;
+  color: #e2e3ed;
 }
 
 .review-item {
   display: flex;
   justify-content: space-around;
   flex-flow: column wrap;
+  margin: 0 0 50px;
 }
 
 .review-item img {
@@ -330,11 +365,13 @@ input[type="button"] {
   display: flex;
   justify-content: flex-start;
   flex-flow: column wrap;
+  color: #e2e3ed;
 }
 
 .review-text h3 {
   width: 50%;
   margin: 20px 0;
+  color: #e2e3ed;
 }
 
 
@@ -346,11 +383,13 @@ footer {
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
+  padding: 50px 0 0;
+  background-color: #202322;
+  color: #e2e3ed;
 }
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
 }
 
 footer h4 {
@@ -359,6 +398,11 @@ footer h4 {
 
 footer address {
   margin-bottom: 50px;
+  font-style: normal;
+}
+
+.social {
+  margin: 20px 0;
 }
 
 .social-icons p {
