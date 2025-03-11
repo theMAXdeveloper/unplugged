@@ -131,9 +131,13 @@ p {
   margin: 0;
 }
 
-img {}
+img {
+  width: 100%;
+}
 
-figure {}
+figure {
+  margin: 0;
+}
 
 input {
   font-size: 1.125em;
@@ -172,7 +176,7 @@ header .content-wrapper {
   justify-content: center;
 }
 
-header img {
+header figure {
   width: 60%;
 }
 
@@ -214,7 +218,7 @@ header nav ul li {
   justify-content: center;
   height: 500px;
   padding: 50px 0;
-  background: #ffffff url("../img/unplugged-retreat.jpg") no-repeat center;
+  background: #ffffff url('../img/unplugged-retreat.jpg') no-repeat center;
   background-size: cover;
 }
 
@@ -296,6 +300,7 @@ input[type="button"] {
   justify-content: center;
   padding: 50px 0;
   background: #527158 url("../img/unplugged-retreat-features.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .features .content-wrapper {
@@ -356,10 +361,7 @@ input[type="button"] {
   margin: 0 0 50px;
 }
 
-.review-item img {
-  width: 90%;
-  align-self: center;
-}
+.review-item img {}
 
 .review-text {
   display: flex;
@@ -671,20 +673,32 @@ footer address {
   /* Reviews */
 
   .reviews {
-    margin: 100px 0;
+    padding: 100px 0;
+  }
+
+  .reviews h2 {
+    width: 80%;
   }
 
   .review-item {
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin: 0;
   }
 
-  .review-item img {
-    width: 45%;
+  .review-item figure {
+    width: 49%;
+    display: flex;
+    align-self: center;
   }
 
   .review-text {
-    width: 45%;
+    width: 49%;
+  }
+
+  .review-text h3 {
+    width: 100%;
+    margin: 0 0 20px;
   }
 
   /* Footer */
@@ -734,6 +748,10 @@ footer address {
   .mission-content p {
     width: 45%;
     margin: 20px 0 0;
+  }
+
+  .contact-section h2 {
+    width: 80%;
   }
 
   /* Map */
@@ -820,11 +838,12 @@ footer address {
   /* Hero area */
 
   .hero-area {
-    height: 400px;
+    height: 600px;
   }
 
-  h1 {
+  .hero-area h1 {
     font-size: 3.75em;
+    line-height: 1em;
   }
 
   /* Aside */
@@ -832,6 +851,10 @@ footer address {
   .form {
     display: flex;
     flex-flow: column wrap;
+  }
+
+  .form-description {
+    width: 33%;
   }
 
   /* Features */
@@ -843,7 +866,11 @@ footer address {
   /* Reviews */
 
   .reviews h2 {
-    margin: 0 0 50px;
+    margin: 0 0 75px;
+  }
+
+  .review-text {
+    width: 43%;
   }
 
   /* Footer */
@@ -865,8 +892,13 @@ footer address {
 
   /* Mission */
 
+  .mission {
+    padding: 100px;
+  }
+
   .mission h2 {
     font-size: 3em;
+    width: 90%;
   }
 
   /* Map */
@@ -876,6 +908,15 @@ footer address {
   }
 
   /* Contact Section */
+
+  .contact-section {
+    padding: 100px;
+  }
+
+  .contact-section h2 {
+    font-size: 3em;
+    width: 90%;
+  }
 
   /* ===== FAQ Page ===== */
 
