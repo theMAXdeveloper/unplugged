@@ -340,7 +340,7 @@ input[type="button"] {
 .reviews {
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  padding: 50px 0 30px;
   background-color: #2a423a;
 }
 
@@ -386,13 +386,18 @@ footer {
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
-  padding: 50px 0 0;
+  padding: 30px 0 0;
   background-color: #202322;
   color: #e2e3ed;
 }
 
 footer .content-wrapper {
   width: 55%;
+  margin: 25px 0;
+}
+
+.footer-content {
+  width: 100%;
 }
 
 footer h4 {
@@ -408,8 +413,20 @@ footer address {
   margin: 20px 0;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
 .social-icons p {
   font-size: 1.3125em;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright {
