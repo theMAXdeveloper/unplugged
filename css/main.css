@@ -327,11 +327,12 @@ input[type="button"] {
   margin: 0 0 30px;
   color: #e2e3ed;
   text-align: center;
+  flex-flow: column wrap;
 }
 
-.fontawesome-icon {
-  padding: 30px 0 40px;
+.features i {
   font-size: 3.75em;
+  margin: 0 0 40px;
 }
 
 /* Reviews */
@@ -668,7 +669,7 @@ footer address {
   }
 
   .features h2 {
-    margin: 0 0 20px;
+    margin: 0 0 50px;
   }
 
   .features-items {
@@ -877,8 +878,18 @@ footer address {
 
   /* Features */
 
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  .features-items {
+    justify-content: space-between;
+    width: 90%;
+  }
+
   .features-items article {
-    width: 30%;
+    width: 26%;
+    margin-top: 30px;
   }
 
   /* Reviews */
