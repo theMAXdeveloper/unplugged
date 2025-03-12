@@ -774,6 +774,10 @@ footer address {
     height: 350px;
   }
 
+  .map figure {
+    padding-bottom: 46%;
+  }
+
   /* Contact section */
 
    .contact-content {
@@ -919,6 +923,11 @@ footer address {
 
   .map {
     height: 450px;
+    overflow: hidden;
+  }
+
+  .map figure {
+    padding-bottom: 37.5%;
   }
 
   /* Contact Section */
