@@ -127,7 +127,7 @@ h4 {
 
 p {
   font-size: 0.875em;
-  line-height: 18px;
+  line-height: 1.285;
   margin: 0;
 }
 
@@ -137,12 +137,6 @@ img {
 
 figure {
   margin: 0;
-}
-
-input {
-  font-size: 1.125em;
-  font-weight: 500;
-  font-family: 'poppins', sans-serif;
 }
 
 address {
@@ -206,6 +200,11 @@ header nav ul {
 header nav ul li {
   list-style: none;
   margin: 0;
+  font-size: 1.125em;
+}
+
+nav a {
+  text-transform: uppercase;
 }
 
 
@@ -247,26 +246,17 @@ aside .content-wrapper {
   flex-flow: column wrap;
 }
 
-aside .form-description {
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-}
-
 aside .form {
-  
+  margin: 30px 0 0;
 }
 
 aside h3 {
   color: #e2e3ed;
-  margin: 20px 0;
-  font-weight: bold;
+  margin: 0 0 20px;
 }
 
 aside p {
   color: #e2e3ed;
-  font-size: 1em;
-  margin: 0 0 30px;
 }
 
 input[type="text"] {
@@ -274,7 +264,6 @@ input[type="text"] {
   width: 100%;
   font-style: italic;
   padding: 1em;
-  margin-bottom: 20px;
   color: #2a423a;
 }
 
@@ -324,7 +313,7 @@ input[type="button"] {
   justify-content: center;
   align-self: center;
   width: 60%;
-  margin: 0 0 30px;
+  margin: 30px 0;
   color: #e2e3ed;
   text-align: center;
   flex-flow: column wrap;
@@ -359,7 +348,7 @@ input[type="button"] {
   display: flex;
   justify-content: space-around;
   flex-flow: column wrap;
-  margin: 0 0 50px;
+  margin: 0 0 34px;
 }
 
 .review-item img {}
@@ -444,6 +433,10 @@ footer address {
   padding: 50px 0;
 }
 
+.mission h2 {
+  margin-top: 0;
+}
+
 /* Map */
 
 .map figure {
@@ -492,7 +485,6 @@ footer address {
 .faq {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
   background-color: #527158;
 }
 
@@ -502,12 +494,12 @@ footer address {
 }
 
 .faq h2 {
-  margin-bottom: 40px;
-  line-height: 30px;
+  margin: 0 0 40px;
+  line-height: 1;
 }
 
 .faq-content {
-  padding-bottom: 50px;
+  margin: 0 0 60px;
 }
 
 .faq-content h4 {
@@ -617,6 +609,7 @@ footer address {
 
   .content-wrapper {
     width: 640px;
+    margin: 50px 0;
   }
 
    /* Header */
@@ -630,10 +623,11 @@ footer address {
     justify-content: space-between;
   }
 
-  .logo {
-    width: 35%;
-    justify-content: flex-start;
+  header figure {
+    width: 30%;
   }
+
+  .logo {}
 
   .header-divider {
     display: none;
@@ -656,7 +650,7 @@ footer address {
   }
 
   .hero-area h1 {
-    width: 80%;
+    width: 90%;
     font-size: 3em;
     line-height: 48px;
   }
@@ -664,20 +658,17 @@ footer address {
   /* Aside */
 
   aside .content-wrapper {
+    display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  .form-description {
+  aside .form-description,
+  aside .form {
     width: 40%;
     margin: 0;
   }  
-
-  .form {
-    width: 40%;
-    margin: 0;
-  }
 
   /* Features */
 
@@ -698,9 +689,6 @@ footer address {
     width: 35%;
   }
 
-  .fontawesome-icon {
-    padding: 0 0 30px;
-  }
 
   /* Reviews */
 
@@ -737,7 +725,7 @@ footer address {
 
   footer .content-wrapper {
     width: 640px;
-    margin: 100px 0; 
+    margin: 75px 0 50px; 
   }
 
   .footer-content {
@@ -761,6 +749,7 @@ footer address {
 
   .social {
     width: 30%;
+    margin: 0;
   }
 
   /* ===== About Page ===== */
@@ -827,7 +816,7 @@ footer address {
 
   .faq h4 {
     font-size: 0.875em;
-    line-height: 15.75px;
+    line-height: 1.125;
   }
 
   .faq p {
@@ -836,7 +825,7 @@ footer address {
   }
 
   .faq-content {
-    width: 45%;
+    flex-basis: 45%;
   }
 
 }
@@ -849,7 +838,9 @@ footer address {
 
   .content-wrapper {
     width: 960px;
+    margin: 100px 0;
   }
+
 
   h2 {
     font-size: 2.25em;
@@ -877,12 +868,26 @@ footer address {
     height: 600px;
   }
 
+  .hero-area .content-wrapper {
+    margin: 0;
+  }
+
   .hero-area h1 {
     font-size: 3.75em;
     line-height: 1em;
+    width: 80%;
+    margin: 0;
   }
 
   /* Aside */
+
+  aside {
+    padding: 0;
+  }
+
+  aside .content-wrapper {
+    margin: 50px 0;
+  }
 
   .form {
     display: flex;
@@ -894,6 +899,10 @@ footer address {
   }
 
   /* Features */
+
+  .features {
+    padding: 0;
+  }
 
   .features h2 {
     margin-bottom: 20px;
@@ -910,6 +919,10 @@ footer address {
   }
 
   /* Reviews */
+
+  .reviews {
+    padding: 0;
+  }
 
   .reviews h2 {
     margin: 0 0 75px;
@@ -939,7 +952,7 @@ footer address {
   /* Mission */
 
   .mission {
-    padding: 100px;
+    padding: 0;
   }
 
   .mission h2 {
@@ -950,7 +963,7 @@ footer address {
   /* Map */
 
   .map {
-    height: 450px;
+    height: 540px;
     overflow: hidden;
   }
 
@@ -961,7 +974,7 @@ footer address {
   /* Contact Section */
 
   .contact-section {
-    padding: 100px;
+    padding: 0;
   }
 
   .contact-section h2 {
