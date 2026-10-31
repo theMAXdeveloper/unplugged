@@ -89,15 +89,152 @@ textarea {
    ========================================================================== */
 
 
+/***** GLOBAL STYLES *****/
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 90%;
+}
+
+/***** HEADER STYLES *****/
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .content-wrapper {
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header a {
+  display: flex;
+  justify-content: center;
+}
+
+header a img {
+  width: 80%;
+}
+
+header nav {
+  width: 80%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
 
 
+/***** HERO AREA *****/
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  background: url(../img/unplugged-retreat.jpg) no-repeat center;
+  width: 100%;
+}
+
+.hero-area h1 {
+  color: #fff;
+}
 
 
+/***** ASIDE *****/
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+aside .content-wrapper {
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.form input {
+  width: 100%;
+}
 
 
+/***** FEATURES *****/
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.features .content-wrapper {
+  justify-content: center;
+  flex-flow: row wrap;
+}
 
 
+/***** REVIEWS *****/
 
+.reviews {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews .content-wrapper {
+  flex-flow: row wrap;
+}
+
+.reviews .image-wrapper img {
+  width: 100%;
+}
+
+
+/***** FOOTER *****/
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 
 
