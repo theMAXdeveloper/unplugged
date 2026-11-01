@@ -95,6 +95,7 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
+  color: #e2e3ed;
 }
 
 main {
@@ -106,6 +107,11 @@ main {
 .content-wrapper {
   display: flex;
   width: 90%;
+  flex-flow: row wrap;
+}
+
+main .content-wrapper {
+  margin: 50px 0;
 }
 
 /***** HEADER STYLES *****/
@@ -113,31 +119,43 @@ main {
 header {
   display: flex;
   justify-content: center;
+  background-color: #202322;
 }
 
 header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 header a {
   display: flex;
   justify-content: center;
+  margin: 15px 0 10px;
 }
 
 header a img {
-  width: 80%;
+  width: 60%;
+}
+
+.header-divider {
+  width: 100%;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 header nav {
-  width: 80%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 100%;
+  margin: 20px 0 15px;
+  padding: 0;
 }
 
 header nav ul li {
@@ -146,6 +164,8 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
+  color: #e2e3ed;
+  text-transform: uppercase;
 }
 
 
@@ -156,11 +176,8 @@ header nav ul li a {
   justify-content: center;
   height: 500px;
   background: url(../img/unplugged-retreat.jpg) no-repeat center;
+  background-size: cover;
   width: 100%;
-}
-
-.hero-area h1 {
-  color: #fff;
 }
 
 
@@ -169,6 +186,7 @@ header nav ul li a {
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 aside .content-wrapper {
@@ -176,8 +194,26 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
+aside h3 {
+  margin: 20px 0;
+}
+
+.form-description p {
+  margin-bottom: 30px;
+}
+
 .form input {
   width: 100%;
+}
+
+input[type="text"] {
+  padding: 1em 0;
+  margin-bottom: 20px;
+}
+
+input[type="button"] {
+  margin-top: 20px;
+  padding: 20px;
 }
 
 
@@ -186,11 +222,31 @@ aside .content-wrapper {
 .features {
   display: flex;
   justify-content: center;
+  background: url(../img/unplugged-retreat-features.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .features .content-wrapper {
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.features h2 {
+  margin: 0 0 60px;
+}
+
+.features article {
+  width: 60%;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.features p {
+  margin: 0;
+}
+
+.fontawesome-icon {
+  margin: 0 0 40px;
 }
 
 
@@ -199,6 +255,7 @@ aside .content-wrapper {
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .reviews .content-wrapper {
@@ -209,18 +266,33 @@ aside .content-wrapper {
   width: 100%;
 }
 
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 50%;
+  margin: 20px 0;
+}
+
 
 /***** FOOTER *****/
 
 footer {
   display: flex;
   justify-content: center;
+  background-color: #202322;
 }
 
 footer .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 55%;
+}
+
+footer p {
+  margin: 0;
 }
 
 .footer-contact {
@@ -228,12 +300,77 @@ footer .content-wrapper {
   justify-content: center;
   flex-flow: column nowrap;
   text-align: center;
+  margin: 50px 0;
+}
+
+.footer-contact h4 {
+  margin: 20px 0;
+}
+
+.contact {
+  margin-bottom: 50px;
 }
 
 .copyright {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.copyright p {
+  margin: 20px 0;
+}
+
+
+/***** ABOUT PAGE *****/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  background-color: #527158;
+}
+
+.mission .content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  background-color: #2a423a;
+}
+
+.contact-section h2 {
+  width: 90%;
+}
+
+.contact-content {
+  width: 70%;
+}
+
+.contact-content p {
+  margin: 0;
+}
+
+/***** FAQ PAGE *****/
+
+.faq {
+  display: flex;
+  justify-content: center;
+  background-color: #527158;
+}
+
+.faq .content-wrapper {
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.question-answer {
+  margin-bottom: 50px;
 }
 
 
