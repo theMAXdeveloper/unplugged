@@ -522,6 +522,53 @@ footer .content-wrapper {
   width: 35%;
 }
 
+
+/***** ABOUT PAGE *****/
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mission-content p {
+  width: 45%;
+  margin-top: 20px;
+}
+
+.map {
+  height: 350px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.general-contact {
+  width: 45%;
+}
+
+.specific-contact {
+  width: 45%;
+}
+
+/***** FAQ PAGE *****/
+
+.faq-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.question-answer {
+  width: 45%;
+}
+
+
 }
 
 /***** DESKTOP *****/
