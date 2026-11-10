@@ -167,6 +167,7 @@ header nav ul li a {
   text-decoration: none;
   color: #e2e3ed;
   text-transform: uppercase;
+  display: block;
 }
 
 
@@ -238,6 +239,13 @@ input[type="button"] {
 
 .features h2 {
   margin: 0 0 60px;
+}
+
+.features-items-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .features article {
@@ -456,7 +464,7 @@ aside .content-wrapper {
 }
 
 .features .content-wrapper {
-  justify-content: space-around;
+  justify-content: left;
   margin: 100px 0;
 }
 
@@ -464,12 +472,12 @@ aside .content-wrapper {
   margin: 0 0 20px;
 }
 
-.features article {
-  width: 35%;
+.features-items-wrapper {
+  justify-content: space-around;
 }
 
-.features .fontawesome-icon {
-  margin: 0 0 30px;
+.features article {
+  width: 35%;
 }
 
 /***** REVIEWS *****/
@@ -575,6 +583,124 @@ footer .content-wrapper {
 @media only screen and (min-width: 1200px) {
 
 
+/***** GLOBAL STYLES *****/
+
+.content-wrapper {
+  width: 960px;
+}
+
+/***** HEADER *****/
+
+header .content-wrapper {
+  margin: 15px 0;
+}
+
+header nav {
+  width: 20%;
+}
+
+header nav ul {
+  justify-content: space-between;
+}
+
+/***** HERO AREA *****/
+
+.hero-area {
+  background-size: 140%;
+}
+
+.hero-area .content-wrapper {}
+
+.hero-area h1 {
+  width: 70%;
+}
+
+/***** ASIDE *****/ 
+
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+.form-description {
+  width: 30%;
+}
+
+.form {
+  width: 30%;
+}
+
+/***** FEATURES *****/
+
+.features h2 {
+  width: 90%;
+}
+
+.features article {
+  width: 26%;
+}
+
+/***** REVIEWS *****/
+
+.reviews .content-wrapper {
+  align-items: flex-start;
+}
+
+.reviews h2 {
+  margin-bottom: 50px;
+}
+
+.reviews .image-wrapper {
+  width: 50%;
+}
+
+.review-description {
+  width: 40%;
+}
+
+.review-description h3 {
+  margin: 0 0 20px;
+}
+
+/***** FOOTER *****/
+
+footer .content-wrapper {
+  width: 960px;
+}
+
+.footer-contact {
+  justify-content: space-between;
+}
+
+.contact {
+  width: 20%;
+}
+
+.social {
+  width: 25%;
+}
+
+
+/***** ABOUT PAGE *****/
+
+.mission .content-wrapper {
+  justify-content: flex-start;
+}
+
+.mission h2 {
+  width: 90%;
+}
+
+.contact-section h2 {
+  width: 85%;
+}
+
+.general-contact {
+  width: 33%;
+}
+
+.specific-contact {
+  width: 33%;
+}
   
 }
 
