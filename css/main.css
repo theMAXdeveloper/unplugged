@@ -480,6 +480,21 @@ footer h4 {
   width: 640px;
 }
 
+h1 {
+  font-size: 3em;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 30px;
+}
+
 /***** HEADER STYLES *****/
 
 header .content-wrapper {
@@ -516,7 +531,7 @@ header nav ul {
 }
 
 .hero-area h1 {
-  width: 80%;
+  width: 85%;
   margin: 0;
 }
 
@@ -567,14 +582,15 @@ aside .content-wrapper {
 
 .reviews h2 {
   width: 75%;
+  line-height: 48px;
 }
 
 .reviews .image-wrapper {
-  width: 45%;
+  width: 49%;
 }
 
 .review-description {
-  width: 50%;
+  width: 48%;
 }
 
 .review-description h3 {
@@ -592,6 +608,14 @@ footer .content-wrapper {
   margin: 100px 0;
   justify-content: space-around;
   width: 100%;
+}
+
+footer h4 {
+  font-size: 1.5em;
+}
+
+footer p {
+  line-height: 18px;
 }
 
 .footer-contact h4 {
@@ -653,6 +677,12 @@ footer .content-wrapper {
   width: 45%;
 }
 
+.faq h4,
+.faq p {
+  font-size: 0.875em;
+  line-height: 15.75px;
+}
+
 
 }
 
@@ -664,6 +694,24 @@ footer .content-wrapper {
 
 .content-wrapper {
   width: 960px;
+}
+
+h1 {
+  font-size: 3.75em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3,
+h4 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 24px;
 }
 
 /***** HEADER *****/
@@ -685,8 +733,6 @@ header nav ul {
 .hero-area {
   background-size: 140%;
 }
-
-.hero-area .content-wrapper {}
 
 .hero-area h1 {
   width: 70%;
@@ -765,6 +811,7 @@ footer .content-wrapper {
 
 .mission h2 {
   width: 90%;
+  font-size: 3em;
 }
 
 .contact-section h2 {
@@ -777,6 +824,19 @@ footer .content-wrapper {
 
 .specific-contact {
   width: 33%;
+}
+
+
+/**** FAQ PAGE *****/
+
+.faq h2 {
+  font-size: 3em;
+}
+
+.faq h4, 
+.faq p {
+  font-size: 1.125em;
+  line-height: 18px;
 }
   
 }
