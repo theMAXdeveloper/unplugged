@@ -214,6 +214,7 @@ header nav ul li a {
   color: #e2e3ed;
   text-transform: uppercase;
   display: block;
+  margin: 0;
 }
 
 
@@ -247,11 +248,12 @@ aside h3 {
 }
 
 .form-description p {
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .form {
   overflow: hidden;
+  margin-top: 30px;
 }
 
 .form input {
@@ -261,20 +263,26 @@ aside h3 {
 }
 
 input[type="text"] {
+  box-sizing: border-box;
   padding: 1em;
   margin-bottom: 20px;
   font-style: italic;
   color: #2a423a;
+  width: 100%;
 }
 
 input[type="button"] {
+  width: 100%;
   margin-top: 20px;
-  padding: 20px;
+  padding: 20px 0;
   background-color: #2a423a;
   color: #e2e3ed;
   text-transform: uppercase;
-  font-weight: bold;
+  text-align: center;
   border: none;
+  font-family: 'poppins', helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
 }
 
 
@@ -410,11 +418,6 @@ footer h4 {
   background-color: #527158;
 }
 
-.mission .content-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .mission h2 {
   width: 95%;
 }
@@ -427,6 +430,7 @@ footer h4 {
 
 .contact-section h2 {
   width: 90%;
+  margin: 0;
 }
 
 .contact-content {
@@ -478,6 +482,10 @@ footer h4 {
 
 .content-wrapper {
   width: 640px;
+}
+
+main .content-wrapper {
+  margin: 100px 0;
 }
 
 h1 {
@@ -547,6 +555,15 @@ aside .content-wrapper {
 
 .form {
   width: 40%;
+  margin: 0;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+}
+
+input[type="button"] {
+  margin-top: 10px;
 }
 
 /***** FEATURES *****/
@@ -562,6 +579,7 @@ aside .content-wrapper {
 
 .features h2 {
   margin: 0 0 20px;
+  width: 100%;
 }
 
 .features-items-wrapper {
@@ -581,8 +599,9 @@ aside .content-wrapper {
 }
 
 .reviews h2 {
-  width: 75%;
+  width: 80%;
   line-height: 48px;
+  margin-top: 0;
 }
 
 .reviews .image-wrapper {
@@ -595,6 +614,7 @@ aside .content-wrapper {
 
 .review-description h3 {
   width: 80%;
+  margin: 10px 0;
 }
 
 /***** FOOTER *****/
@@ -633,6 +653,11 @@ footer p {
 
 
 /***** ABOUT PAGE *****/
+
+.mission h2 {
+  width: 100%;
+  margin-top: 0;
+}
 
 .mission-content {
   display: flex;
@@ -704,6 +729,10 @@ h2 {
   font-size: 2.25em;
 }
 
+h3 {
+  line-height: 40px;
+}
+
 h3,
 h4 {
   font-size: 1.875em;
@@ -736,12 +765,14 @@ header nav ul {
 
 .hero-area h1 {
   width: 70%;
+  line-height: 60px;
 }
 
 /***** ASIDE *****/ 
 
 aside .content-wrapper {
   justify-content: space-around;
+  margin: 50px 0;
 }
 
 .form-description {
@@ -753,6 +784,10 @@ aside .content-wrapper {
 }
 
 /***** FEATURES *****/
+
+.features {
+  background-size: 120%;
+}
 
 .features h2 {
   width: 90%;
@@ -815,7 +850,11 @@ footer .content-wrapper {
 }
 
 .contact-section h2 {
-  width: 85%;
+  width: 70%;
+}
+
+.contact-content h4 {
+  margin: 20px 0;
 }
 
 .general-contact {
