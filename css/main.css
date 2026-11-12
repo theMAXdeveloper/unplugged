@@ -158,6 +158,15 @@ address {
   font-style: normal;
 }
 
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+
 /***** HEADER STYLES *****/
 
 header {
@@ -223,8 +232,8 @@ header nav ul li a {
 .hero-area {
   display: flex;
   justify-content: center;
-  height: 500px;
-  background: url(../img/unplugged-retreat.jpg) no-repeat center;
+  min-height: 500px;
+  background: url(../img/unplugged-retreat.jpg) no-repeat center #2a423a;
   background-size: cover;
   width: 100%;
 }
@@ -338,10 +347,6 @@ input[type="button"] {
 
 .reviews .content-wrapper {
   flex-flow: row wrap;
-}
-
-.reviews .image-wrapper img {
-  width: 100%;
 }
 
 .reviews h2 {
@@ -604,7 +609,7 @@ input[type="button"] {
   margin-top: 0;
 }
 
-.reviews .image-wrapper {
+.reviews figure {
   width: 49%;
 }
 
@@ -807,7 +812,7 @@ aside .content-wrapper {
   margin-bottom: 50px;
 }
 
-.reviews .image-wrapper {
+.reviews figure {
   width: 50%;
 }
 
