@@ -427,7 +427,7 @@ footer h4 {
   width: 95%;
 }
 
-.map figure {
+/* .map figure {
   width: 100%;
   height: 0;
   padding-bottom: 125%;
@@ -441,7 +441,7 @@ footer h4 {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 .contact-section {
   display: flex;
@@ -691,9 +691,9 @@ footer p {
   margin-top: 20px;
 }
 
-.map {
-  height: 350px;
-}
+/* .map figure {
+  padding-bottom: 45.573%;
+} */
 
 .contact-content {
   display: flex;
