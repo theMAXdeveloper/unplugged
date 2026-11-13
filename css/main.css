@@ -372,7 +372,6 @@ footer .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 55%;
 }
 
 footer p {
@@ -386,9 +385,10 @@ footer h4 {
 .footer-contact {
   display: flex;
   justify-content: center;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   text-align: center;
   margin: 50px 0;
+  width: 60%;
 }
 
 .footer-contact h4 {
@@ -397,10 +397,28 @@ footer h4 {
 
 .contact {
   margin-bottom: 50px;
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.social h4 {
+  width: 100%;
 }
 
 .social-icons {
   font-size: 1.3125em;
+  width: 20%;
+  background-color: #527158;
+  border-radius: 30px;
+  padding: 13px;
+  box-sizing: border-box;
 }
 
 .copyright {
@@ -408,6 +426,8 @@ footer h4 {
   justify-content: center;
   width: 100%;
   text-transform: capitalize;
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
 }
 
 .copyright p {
@@ -589,10 +609,6 @@ input[type="button"] {
 
 /***** FEATURES *****/
 
-.features {
-  background-size: 180%;
-}
-
 .features .content-wrapper {
   justify-content: left;
   margin: 100px 0;
@@ -605,6 +621,7 @@ input[type="button"] {
 
 .features-items-wrapper {
   justify-content: space-around;
+  align-items: flex-start;
 }
 
 .features article {
@@ -670,6 +687,7 @@ footer p {
 
 .social {
   width: 35%;
+  justify-content: space-between;
 }
 
 
